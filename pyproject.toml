@@ -27,6 +27,11 @@ dependencies = [
     "truststore",
 ]
 
+[project.optional-dependencies]
+trio = [
+    "trio>=0.22,<1",
+]
+
 [tool.hatch.build.targets.sdist]
 include = [
     "/src",
